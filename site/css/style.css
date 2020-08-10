@@ -1,0 +1,73 @@
+/*Roboto font add */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+@import url('./partial/_variable.css');
+
+body{margin:0;padding:0;
+    box-sizing : border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    height:100%;
+    width:100%;
+}.main-menu .navbar a{
+    color:var(--primary-color2);
+}
+.main-menu .navbar .nav-item .nav-link{
+    font:bold 500px 15px/2px var(--roboto) ;
+    text-transform:uppercase;
+    padding:1.3rem;
+    color:var(--title-color);
+}
+
+.main-menu .navbar .navbar-nav  .active a{
+    background:var(--linear-gradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+}
+
+.main-menu .navbar .navbar-nav .nav-item .nav-link:hover:not(.navbar-brand){
+    background:var(--linear-gradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+}
+/*Header bottom*/
+
+.site-main .header-left h2{
+    padding-top:33%;
+    font-weight: 500px;
+}
+.site-main .header-left h2::after{
+    content:' ';
+    height:2px;
+    width: 14vw;
+    background: black;
+    display:inline-block;
+    margin:5px;
+}
+
+.site-main .home-banner{
+    max-width:500px;
+}
+.site-main .site-button .btn{
+    padding:10px 25px;
+    color:whitesmoke;
+    background: var(--linear-gradient);
+    margin-right:55px;
+    margin-top:30px;
+}
+.site-main .site-button .secondary-btn{
+    background: transparent;
+    border:2px solid var(--primary-color2);
+    color:black; 
+}
+.site-main .site-button .secondary-btn:hover{
+    color:whitesmoke;
+    background: var(--linear-gradient);
+}
+.site-main .site-button .primary-btn:hover{
+color:black;
+background:transparent;
+border:2px solid var(--primary-color2);
+}
